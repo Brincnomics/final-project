@@ -73,7 +73,7 @@ Deploy
 ## Deploying on Ropsten's Testnet
   - Get an Ethereum Account on Metamask.
   - On the landing page, click “Get Chrome Extension.”
-  - Create a .secret file cointaining the menomic.
+  - Create a .env file cointaining the menomic.
   - Get some test ether from a [Ropsten's faucet](https://faucet.dimensions.network/).
   - Signup [Infura](https://infura.io/).
   - Create a new project.
@@ -96,9 +96,8 @@ Deploy
     $ truffle migrate --network Ropsten
     ```
 
-   The Project's smart contracts have been deployed on [Ropsten](https://Ropsten.etherscan.io/address/0x527903D7938Fba0b2A88b55244b0eafb28047ff6).  
-   The ABIs are available to test the project on Ropsten's Network.  
-
+   The Project's wallet contract address has been deployed on [Ropsten](https://ropsten.etherscan.io/address/0x14e25ab1f217f4196b7e3b116fe93418b206d5ad).  
+  
 Using the DApp
 ==============
   Installations for front end
@@ -117,10 +116,6 @@ Using the DApp
   - Move to client directory on the project:
     ```
     $ cd client
-    ```
-  - Install dependencies:
-    ```
-    $ yarn install
     ```
   - Start the Local Web Server:
     ```sh

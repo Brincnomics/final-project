@@ -21,7 +21,6 @@ Smart contract have been written and deployed to allow a User to buy ERC-20 toke
 * [Testing](#testing)
 * [Deploy](#deploy)
 * [Using the DApp](#using-the-dapp)
-* [About](#about)
 
 Setup
 =====

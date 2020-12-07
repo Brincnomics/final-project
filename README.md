@@ -103,7 +103,7 @@ Using the DApp
   - npx create-react-app client
   - cd client
   - npm install ethers react-bootstrap bootstrap
-  Install [Ganache GUI](https://www.trufflesuite.com/ganache).
+  Installation for [Ganache GUI](https://www.trufflesuite.com/ganache).
   - Select the the Square-Wrist (Ethereum) Workspace on the Ganache GUI which is set to port 8545
   - Import the Ganache GUI mnemonic (seed phrase) found at the top of the list of addresses into MetaMask's import account option. 
   - Set a custom RPC with the settings from Ganache: HTTP://127.0.0.1:8545). 

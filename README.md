@@ -21,7 +21,6 @@ Smart contract have been written and deployed to allow a User to buy ERC-20 toke
 * [Testing](#testing)
 * [Deploy](#deploy)
 * [Using the DApp](#using-the-dapp)
-* [About](#about)
 
 Setup
 =====
@@ -73,7 +72,7 @@ Deploy
 ## Deploying on Ropsten's Testnet
   - Get an Ethereum Account on Metamask.
   - On the landing page, click “Get Chrome Extension.”
-  - Create a .secret file cointaining the menomic.
+  - Create a .env file cointaining the menomic.
   - Get some test ether from a [Ropsten's faucet](https://faucet.dimensions.network/).
   - Signup [Infura](https://infura.io/).
   - Create a new project.
@@ -96,16 +95,15 @@ Deploy
     $ truffle migrate --network Ropsten
     ```
 
-   The Project's smart contracts have been deployed on [Ropsten](https://Ropsten.etherscan.io/address/0x527903D7938Fba0b2A88b55244b0eafb28047ff6).  
-   The ABIs are available to test the project on Ropsten's Network.  
-
+   The Project's wallet contract address has been deployed on [Ropsten](https://ropsten.etherscan.io/address/0x14e25ab1f217f4196b7e3b116fe93418b206d5ad).  
+  
 Using the DApp
 ==============
   Installations for front end
   - npx create-react-app client
   - cd client
   - npm install ethers react-bootstrap bootstrap
-  Install [Ganache GUI](https://www.trufflesuite.com/ganache).
+  Installation for [Ganache GUI](https://www.trufflesuite.com/ganache).
   - Select the the Square-Wrist (Ethereum) Workspace on the Ganache GUI which is set to port 8545
   - Import the Ganache GUI mnemonic (seed phrase) found at the top of the list of addresses into MetaMask's import account option. 
   - Set a custom RPC with the settings from Ganache: HTTP://127.0.0.1:8545). 
@@ -118,10 +116,6 @@ Using the DApp
     ```
     $ cd client
     ```
-  - Install dependencies:
-    ```
-    $ yarn install
-    ```
   - Start the Local Web Server:
     ```sh
     $ npm run start
@@ -133,4 +127,4 @@ Using the DApp
     - The webpage will display the new amount of MTK tokens held by the User wallet.
 
     - Done.  
-    # final-project
+  

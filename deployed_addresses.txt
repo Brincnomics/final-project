@@ -1,0 +1,5 @@
+Network: Ropsten
+Wallet Contract Address: 0x14e25ab1f217f4196b7e3b116fe93418b206d5ad
+Migrations Contract Address: 0xe76C00feB9E5fB479b82986d10d5941B1b7Ee5B3
+MyToken Contract Address: 0xcec083dA4d455bC02c67C26B3c1Ba432494B373b
+MyCrowdsale Contract Address: 0x4669BD2A4FDd4371518F7e3aF02f484BedC5e5F9

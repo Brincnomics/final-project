@@ -1,5 +1,5 @@
 1. Circuit Breaker
-Circuit Breakers are design patterns that allow contract functionality to be stopped. This would be desirable in situations where there is a live contract where a bug has been detected. Implemented inheriting Pausable.sol from the OpenZeppelin Library. The modifier, whenNotPaused() is used in order to freeze all functions by calling the pause() functions in case of a bug or other issue. 
+Is a design pattern that allow contract functionality to be stopped. This would be desirable in situations where there is a live contract where a bug has been detected. Implemented inheriting Pausable.sol from the OpenZeppelin Library. The modifier, whenNotPaused() is used in order to freeze all functions by calling the pause() functions in case of a bug or other issue. 
 
 2. Fail Early Fail Loud
 The ERC20.sol inherited contract has a conditional checks, require(account != address(0, to see if the transaction intended to transfer funds and not create a new contract. Implemented using the require() function to check for conditions required for execution at the beginning of the function body to throw an exception if the condition is not met.

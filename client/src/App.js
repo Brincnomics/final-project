@@ -9,8 +9,8 @@ import MyToken from "./contracts/MyToken.json";
 // Needs to change to reflect current MyToken address //[UPDATE with address provided from migration]
 // Enter address of both contracts -I was missing the Crowdsale Address!!!
 // The contract addresses here is not the same one for Ropsten needs to be updated
-const myTokenAddress ='0xAE4e4F48ebC2e5dC151880c3B456bC9A96c018e1';
-const myCrowdsaleAddress ='0x4669BD2A4FDd4371518F7e3aF02f484BedC5e5F9';
+const myTokenAddress ='0xea8870f3E2aAcf26ac945159A11E79e3196d5752';
+const myCrowdsaleAddress ='0x1b77B60B398834b3C3b7B397c25ca7A90Ad29260';
 
 let provider;
 let signer;

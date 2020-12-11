@@ -2886,7 +2886,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-12-07T06:39:37.481Z",
+  "updatedAt": "2020-12-09T09:54:48.013Z",
   "devdoc": {
     "details": "ERC20 with pausable transfers and allowances. * Useful if you want to stop trades until the end of a crowdsale, or have an emergency switch for freezing all token transfers in the event of a large bug.",
     "methods": {

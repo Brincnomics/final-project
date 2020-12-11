@@ -40,7 +40,7 @@ Clone this GitHub repository.
     $ npm install @openzeppelin/contracts
     ```
 
-## Running the project with local test network (ganache-cli)
+## Running the project on a local test network (ganache-cli)
 
    - Start ganache-cli with the following command:
      ```sh

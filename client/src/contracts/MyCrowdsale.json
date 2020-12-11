@@ -639,40 +639,6 @@
     "version": "0.5.5+commit.47a71e8f.Emscripten.clang"
   },
   "networks": {
-    "3": {
-      "events": {
-        "0x6faf93231a456e552dbc9961f58d9713ee4f2e69d15f1975b050ef0911053a7b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "name": "purchaser",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "name": "beneficiary",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "name": "value",
-              "type": "uint256"
-            },
-            {
-              "indexed": false,
-              "name": "amount",
-              "type": "uint256"
-            }
-          ],
-          "name": "TokensPurchased",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x4669BD2A4FDd4371518F7e3aF02f484BedC5e5F9",
-      "transactionHash": "0xada8c3d61c9e334e06d5250635b77ce9e402fa7a2783cfbcb765b6f321ff4f58"
-    },
     "5777": {
       "events": {
         "0x6faf93231a456e552dbc9961f58d9713ee4f2e69d15f1975b050ef0911053a7b": {
@@ -704,12 +670,12 @@
         }
       },
       "links": {},
-      "address": "0xf9c64134568D20BE8e50d6f91a27C956c351ffC9",
-      "transactionHash": "0xcf4893902ac6474c1172208a604592ed8ab4e89183681100ffedbdc71dfdfd66"
+      "address": "0x1b77B60B398834b3C3b7B397c25ca7A90Ad29260",
+      "transactionHash": "0x7091d252ef2165d624f1c721f5d27829bcc79d5769e8a20c48fb37b7817e92c5"
     }
   },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-12-07T07:40:48.391Z",
+  "updatedAt": "2020-12-09T09:54:53.435Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "This is an example of a fully fledged crowdsale.",

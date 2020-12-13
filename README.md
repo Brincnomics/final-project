@@ -6,7 +6,7 @@
 Smart contract have been written and deployed to allow a User to buy ERC-20 tokens, MyToken ("MTK") from the owner's contract from a webpage using a metamask wallet. 
 
 
-[Demo](https://youtu.be/https://youtu.be/aDbYbEyk648)
+[Demo](https://youtu.be/shsTfzgBVUo	)
 
 <!-- ## Links
 
@@ -77,15 +77,34 @@ Deploy
   - Signup [Infura](https://infura.io/).
   - Create a new project.
   - Copy the Ropsten URL into truffle-config.js.
-  - Uncomment the following lines in truffle-config.js:
+  - Insert or uncomment the following lines in truffle-config.js:
     ```
-    // const HDWalletProvider = require("@truffle/hdwallet-provider");
-    // const infuraKey = '...';
-    // const infuraURL = 'https://Ropsten.infura.io/...';
+  compilers: {
+  solc: {
+    version: "0.5.5",    // Fetch exact version from solc-bin (default: truffle's version)
+   },
+  },
+  networks: {
+    //
+    development: {
+      host: "127.0.0.1",     // Localhost (default: none)
+      port: 8545,            // Standard Ethereum port (default: none)
+      network_id: "*",       // Any network (default: none)
+    },
 
-    // const fs = require('fs');
-    // const mnemonic = fs.readFileSync(".secret").toString().trim();
-    ```
+    //For testing insert/uncomment the following:
+    ropsten: {
+      provider: () =>
+        new HDWalletProvider(
+        process.env.MNEMONIC,
+        `https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}`
+        ),
+        network_id: 3, // Ropsten's id
+        gas: 5500000, // Ropsten has a lower block limit than mainnet
+        confirmations: 2, // # of confs to wait between deployments. (default: 0)
+        timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
+        skipDryRun: true // Skip dry run before migrations? (default: false for public nets )
+      }
   - Install Truffle HD Wallet Provider:
     ```sh
     $ npm install @truffle/hdwallet-provider
@@ -107,6 +126,12 @@ Using the DApp
   - Select the the Square-Wrist (Ethereum) Workspace on the Ganache GUI which is set to port 8545
   - Import the Ganache GUI mnemonic (seed phrase) found at the top of the list of addresses into MetaMask's import account option. 
   - Set a custom RPC with the settings from Ganache: HTTP://127.0.0.1:8545). 
+  - Truffe-config.js should be changed with the following settings:
+    interacting and launching the front end comment out lines 96-107 above and insert the following:
+      const path = require("path");
+      module.exports = {
+      contracts_build_directory: path.join(__dirname, "client/src/contracts"),
+      ```
  
   - Deploy the smart contracts to Ganache GUI:
     ```

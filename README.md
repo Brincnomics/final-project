@@ -6,7 +6,7 @@
 Smart contract have been written and deployed to allow a User to buy ERC-20 tokens, MyToken ("MTK") from the owner's contract from a webpage using a metamask wallet. 
 
 
-[Demo](https://youtu.be/shsTfzgBVUo	)
+[Demo](https://https://youtu.be/aDbYbEyk648)
 
 <!-- ## Links
 
